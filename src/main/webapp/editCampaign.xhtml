@@ -51,23 +51,23 @@
                 </h:panelGrid>
               </p:tab>
               <p:tab title="#{msg['editCampaign.bank_account']}">
-              <h:panelGrid columns="3">
-                <h:outputLabel value="#{msg['editCampaign.name']}:" />
-                <p:inputText id="b_name" value="#{campaignProducer.selectedCampaign.account.name}">
-                  <f:validateRequired />
-                </p:inputText>
-                <p:message for="b_name" />
-                <h:outputLabel value="#{msg['editCampaign.iban']}:" />
-                <p:inputText id="b_iban" value="#{campaignProducer.selectedCampaign.account.iban}">
-                  <f:validateRequired />
-                </p:inputText>
-                <p:message for="b_iban" />
-                <h:outputLabel value="#{msg['editCampaign.name_of_bank']}:" />
-                <p:inputText id="b_name_bank" value="#{campaignProducer.selectedCampaign.account.nameOfBank}">
-                  <f:validateRequired />
-                </p:inputText>
-                <p:message for="b_name_bank" />
-              </h:panelGrid>
+                <h:panelGrid columns="3">
+                  <h:outputLabel value="#{msg['editCampaign.name']}:" />
+                  <p:inputText id="b_name" value="#{campaignProducer.selectedCampaign.account.name}">
+                    <f:validateRequired />
+                  </p:inputText>
+                  <p:message for="b_name" />
+                  <h:outputLabel value="#{msg['editCampaign.iban']}:" />
+                  <p:inputText id="b_iban" value="#{campaignProducer.selectedCampaign.account.iban}">
+                    <f:validateRequired />
+                  </p:inputText>
+                  <p:message for="b_iban" />
+                  <h:outputLabel value="#{msg['editCampaign.name_of_bank']}:" />
+                  <p:inputText id="b_name_bank" value="#{campaignProducer.selectedCampaign.account.nameOfBank}">
+                    <f:validateRequired />
+                  </p:inputText>
+                  <p:message for="b_name_bank" />
+                </h:panelGrid>
               </p:tab>
             </p:tabView>
             <p:commandButton value="#{msg['editCampaign.save']}"

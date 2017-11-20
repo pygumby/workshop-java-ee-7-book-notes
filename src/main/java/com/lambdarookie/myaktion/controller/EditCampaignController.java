@@ -2,10 +2,10 @@ package com.lambdarookie.myaktion.controller;
 
 import com.lambdarookie.myaktion.data.CampaignListProducer;
 import com.lambdarookie.myaktion.data.CampaignProducer;
+import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.io.Serializable;
 
 @SessionScoped
 @Named
