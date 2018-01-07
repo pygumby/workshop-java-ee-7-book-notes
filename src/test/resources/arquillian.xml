@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<arquillian xmlns="http://jboss.org/schema/arquillian"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://jboss.org/schema/arquillian http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+  <extension qualifier="webdriver">
+    <property name="browser">firefox</property>
+    <!-- The latest supported Firefox version for Selenium 2.39 seems to be 26.0. -->
+    <!-- https://stackoverflow.com/questions/48053477/unable-to-retrieve-drone-instance-within-60-seconds -->
+    <property name="firefox_binary">/opt/old_firefox/Firefox.app/Contents/MacOS/firefox-bin</property>
+  </extension>
+</arquillian>
