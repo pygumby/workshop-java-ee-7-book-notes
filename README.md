@@ -1,14 +1,35 @@
-# WorkshopJavaEE7
+# workshop-java-ee-7-book-notes
 
-## Sample project of the German book "Workshop Java EE 7" by Marcus Schießer und Martin Schmollinger
+**Sample project of the German book "Workshop Java EE 7" by Marcus Schießer und Martin Schmollinger**
 
-### Overview
+---
 
-This is just me following along the German book "Workshop Java EE 7" by Marcus Schießer und Martin Schmollinger.
-The book's website is at https://www.dpunkt.de/buecher/4861/workshop-java-ee-7.html.
-The original repository can be found at https://github.com/marcusschiesser/my-aktion-2nd.
+* The contents of this repository are originally based on the 2014 book [Workshop Java EE 7](https://www.dpunkt.de/buecher/4861/workshop-java-ee-7.html) by Marcus Schießer ([@marcusschiesser](https://github.com/marcusschiesser/), [marcusschiesser.de](http://marcusschiesser.de)).
+  This repository only represents a fraction of what is to be found within the book.
+  Also, this repository contains many additions and comments that are not part of the book.
+* The original repository can be found at [github.com/marcusschiesser/my-aktion-2nd](https://github.com/marcusschiesser/my-aktion-2nd).
 
-### Usage
+---
+
+1. [Progress](#1-progress)
+2. [Usage](#2-usage)
+
+---
+
+## 1. Progress
+
+|  Done?                        | Chapter                                                                      |
+|:-----------------------------:|------------------------------------------------------------------------------|
+| :white_check_mark: (no code) |  1. Ein Einstieg mit Profil                                                  |
+| :white_check_mark: (no code) |  2. Aufsetzen der Entwicklungsumgebung                                       |
+| :white_check_mark: (no code) |  3. Fachlichkeit der Beispielanwendungen "My-Aktion" und "My-Aktion-Monitor" |
+| :white_check_mark:           |  4. Iteration Nr. 1 – JavaServer Faces                                       |
+| :white_check_mark:           |  5. Iteration Nr. 2 – Funktionale Tests                                      |
+
+:point_right: I am currently working my way through chapter 6.
+
+## 2. Usage
+
 Start WildFly.
 (On my machine, I do `/opt/wildfly-8.1.0.Final/bin/standalone.sh --server-config=standalone.xml`.)
 Deploy with `mvn clean package wildfly:deploy`.
@@ -18,7 +39,3 @@ To run the integration tests, make sure [arquillian.xml](src/test/resources/arqu
 Make sure that the `Locale` set in [AbstractPage.java](src/test/java/com/lambdarookie/myaktion/test/pages/AbstractPage.java) matches the default language of your OS.
 Start WildFly.
 Do `mvn verify`.
-
-### Credit
-
-All the credit goes to the authors of the book, Marcus Schiesser ([@MarcusSchiesser](https://github.com/marcusschiesser/)) and Martin Schmollinger.
