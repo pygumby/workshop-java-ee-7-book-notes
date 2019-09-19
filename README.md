@@ -1,6 +1,6 @@
 # workshop-java-ee-7-book-notes
 
-**Sample project of the German book "Workshop Java EE 7" by Marcus Schießer und Martin Schmollinger**
+**Notes on and source code from the 2014 book "Workshop Java EE 7" by Marcus Schießer**
 
 ---
 
